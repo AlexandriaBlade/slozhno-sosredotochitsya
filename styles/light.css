@@ -3,27 +3,54 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.page.theme_light {
-  --bcg-color: #fff1f7;
-  --title-color: #ffc2e6;
-  --shadow-color:  #ff8dcb;
-  --section-color-frame: #ff8dcb;
-  --section-color-title: #353430;
-  --section-color-title-frame: #353430;
-  --text-description-color: #353430;
-  --color-hover: #32312d66;
-  --cover-image: url(../images/cover-image-light.png);
+background-image: url(../images/cover-image-light.png);
+  --menu-color: #353430;
+  --accent-color-opacity40: rgba(50, 49, 45, 0.4);
+  --header-title-color: #ffc2e6;
+  --footer-title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --section-title: #353430;
+  --main-header-color: #353430;
+  --article-text-color: #353430;
+}
+
+.theme_light .header__rec {
+  display: none;
+}
+
+.theme_light .header__theme-menu-button_active {
+  border: 1px solid var(--menu-color, #353430);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  --accent-color-opacity40: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bcg-color: #fff1f7;
-    --title-color: #ffc2e6;
-    --shadow-color: #ff0070;
-    --section-color-frame: #ff8dcb;
-    --section-color-title: #353430;
-    --section-color-title-frame: #353430;
-    --text-description-color: #353430;
-    --cover-image: url(../images/cover-image-light.png);
+    --menu-color: #353430;
+    --accent-color-opacity40: rgba(50, 49, 45, 0.4);
+    --header-title-color: #ffc2e6;
+    --footer-title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --section-title: #353430;
+    --main-header-color: #353430;
+    --article-text-color: #353430;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .header__rec {
+    display: none;
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--menu-color, #353430);
+  }
+
+  .header__theme-menu-button:hover {
+    --accent-color-opacity40: rgba(50, 49, 45, 0.4);
   }
 }
