@@ -1,5 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-.page {
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+ .page {
      background-image: url(../images/cover-image-dark.png);
      background-position: center;
      background-size: cover;
@@ -231,7 +232,8 @@
          --gap: 10px;
     }
      .header__theme-menu {
-         margin-top: -5px;
+         grid-column: 2 / 3;
+         justify-self: end;
     }
      .header__title {
          margin-inline-start: 0;
