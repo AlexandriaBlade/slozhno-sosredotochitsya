@@ -3,7 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
   --menu-color: #ff0070;
@@ -15,4 +14,16 @@
   --header-color: #00183f;
   --section-title: #ff0070;
   --article-text-color: #f1b2ce;
+}
+
+.theme_dark .header__rec {
+  display: block;
+}
+
+.theme_dark .header__theme-menu-button_active {
+  border: 1px solid var(--menu-color);
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  --accent-color-opacity40: rgba(255, 0, 112, 0.4);
 }
