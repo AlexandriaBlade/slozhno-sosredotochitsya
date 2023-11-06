@@ -3,7 +3,8 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-background-image: url(../images/cover-image-light.png);
+ .page.theme_light {
+  background-image: url(../images/cover-image-light.png);
   --menu-color: #353430;
   --accent-color-opacity40: rgba(50, 49, 45, 0.4);
   --header-title-color: #ffc2e6;
