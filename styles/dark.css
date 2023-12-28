@@ -38,11 +38,6 @@
     display: block;
     visibility: visible;
   }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(255, 0, 112, 0.4);
-    padding: 0 13px;
-  }
 }
 
 .page.theme_dark .header_item::after {
@@ -53,9 +48,4 @@
 .page.theme_dark .header_item::before {
   display: block;
   visibility: visible;
-}
-
-.page.theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
-  padding: 0 13px;
 }
