@@ -4,34 +4,21 @@
   переключая тему
 */
 .page.theme_dark {
-  --main-text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --title-shadow: #ff0070;
-  --hover-color: 1px solid rgba(255, 0, 112, 0.4);
+  --accent-color: #ff0070;
   --background-color: #000028;
-  --background-image: url(../images/cover-image-dark.png);
-  --article-title-color: var(--background-color);
-  --section-title-color: var(--title-shadow);
-  --border-color: var(--main-text-color);
-  --corners-color: var(--title-shadow);
-  --title-decor: var(--title-shadow);
-  --link-shadow: var(--title-shadow);
-  --rec-color: var(--title-shadow);
+  --text-color: #000028;
+  --title-color: #db00ff;
+  --main-text-color: #f1b2ce;
+  --accent-text-color: #FF0070;
+  --button-color: #ff0070;
+  --decor-element-color: #ff0070;
+  --btn-hover-color: rgba(255, 0, 112, 0.4);
+  --btn-focus-color: #ff0070;
+  --btn-active-color: #ff0070;
+  --link-hover-color: #f1b2ce;
+  --link-focus-color: #f1b2ce;
+  --title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --visibility-rec: visible;
+  --background-image: url("../images/cover-image-dark.png");
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --title-shadow: #ff0070;
-    --hover-color: 1px solid rgba(255, 0, 112, 0.4);
-    --background-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
-    --article-title-color: var(--background-color);
-    --section-title-color: var(--title-shadow);
-    --border-color: var(--main-text-color);
-    --corners-color: var(--title-shadow);
-    --title-decor: var(--title-shadow);
-    --link-shadow: var(--title-shadow);
-    --rec-color: var(--title-shadow);
-  }
