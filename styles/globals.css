@@ -1,24 +1,14 @@
 /* Глобальные стили для проекта */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  block-size: 100%;
-}
-
 body {
-  font-family: var(--font-family), sans-serif;
-
-  font-size: 18px;
-  font-weight: 400;
   min-inline-size: 375px;
-  max-inline-size: 1024px;
+  max-inline-size: 1440px;
   margin: 0 auto;
-  block-size: 100%;
 }
 
 h1,
@@ -33,7 +23,6 @@ p {
 
 ul {
   margin: 0;
-
   padding: 0;
   list-style: none;
 }
@@ -41,4 +30,12 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+}
+
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
